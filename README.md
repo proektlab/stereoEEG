@@ -7,7 +7,7 @@ Process and save .mat file for each session with:
 If tone response data is available for the session, make sure the 'toneResponse_Induction' subfolder is in the specified 'data_dir/subject' path so that it is included in the .mat file.
 
 ## Add brain segmentation labels to each sEEG contact
-Run `addSEEGlabels.m;` to add labels to the channel_labels variable in the .mat file. Uses labels found in ITKSnap CSV file. This is currently only relevant for the induction sessions.
+Run `addSEEGlabels;` (or `addSEEGlabels_rave;` for newer subjects) to add labels to the channel_labels variable in the .mat file. Uses labels found in ITKSnap CSV file (addSEEGlabels) or exported from RAVE (addSEEGlabels_rave). This is currently only relevant for the induction sessions.
 
 ## Sync behavioral-sEEG data
 If tone response data is available for the session, run `toneResponseSync;`. 
