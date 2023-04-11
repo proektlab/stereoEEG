@@ -17,7 +17,7 @@ This adds the tone on, tone off, button press, button release timestamped events
 Run `toneResponseAnaly;` (requires functions in Smith2004 subfolder) to estimate probability of response based on response data following analysis of Smith et al 2004 J Neurosci. Estimate of time of loss of consciousness (LOC) follows similar criteria as Purdon et al 2013 PNAS.
 
 ## Identify channels to include in analyses
-Run `ibad = notSEEGChannels(channel_labels,wm,bad_channels);` to return indices of channels not to include in subsequent analyses. Removes non-sEEG channels (e.g. scalp EEG channels), channels labeled as white matter if set second argument to 1, and any previously identified 'bad' channels listed in cell array in third argument.
+Run `ibad = notSEEGchannels(channel_labels,wm,bad_channels);` to return indices of channels not to include in subsequent analyses. Removes non-sEEG channels (e.g. scalp EEG channels), channels labeled as white matter if set second argument to 1, and any previously identified 'bad' channels listed in cell array in third argument.
 
 ## Qualitative analysis: time domain
 Load .mat file for session. Then produce scrolling time plot with:  
